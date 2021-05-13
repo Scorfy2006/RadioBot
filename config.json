@@ -1,0 +1,10 @@
+{ 
+    "botOwner" : "690651493891833856",  
+    "token"  : "ODIwMzk2<lifos<uigfpisvgvuügprojgihrgoihgugvgiürg",
+    "prefix" : "%",
+    "webURL" : "https://www.reyfm.de",
+    "apiURL" : "https://api.reyfm.de/v4/channel?chn=1",
+    "cdnURL" : "http://cdn.khz.se/images/",
+    "logoPath" : "https://cdn.discordapp.com/attachments/839928452055564318/839931522207186944/3830_offline.png",
+    "debug" : false
+  }
