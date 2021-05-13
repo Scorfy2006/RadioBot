@@ -12,8 +12,6 @@ const deleteafter = 20000
 const commandcooldown = 2000
 const commandRecently = new Set()
 
-const activity = 'ILIKERADIO 🎵!play🎵'
-const acttype = "LISTENING"
 
 client.on("error", (ex) => {
     console.error("ERROR " + ex)
@@ -22,12 +20,7 @@ client.on("error", (ex) => {
 if (config.debug) {
 client.on('debug', console.log)
 }
-const Enmap = require("enmap");
-const radio = require('./radio')
-radio(client)
-client.settings = new Enmap({
-        name: "settings",
-      });
+
       
 
 var fetchUrl = require("fetch").fetchUrl;
@@ -109,17 +102,6 @@ client.on('unhandledRejection', (reason, promise) => {
   console.log('Unhandled Rejection at:', reason.stack || reason)
 })
 
-
-
-client.on("guildCreate", guild => {
-  console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`)
-
-})
-
-client.on("guildDelete", guild => {
-  console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`)
-
-})
 
 
 
